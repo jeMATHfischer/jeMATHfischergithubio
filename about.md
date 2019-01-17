@@ -7,7 +7,7 @@ Interaction between agents, agents' random behaviour within their social environ
 That's why I decided to put up this webpage to collect interesting facts about networks and share my ideas and work on these topics. 
 
 <div style='float: center'>
-  <img style='width: 600px' src="_images/random_graph_example.png"></img>
+  <img style='width: 600px' src="_images/random_graph_example.png"/>
 </div>
 
 In my blog you find some impressions of my current work most of which being work in progress.
