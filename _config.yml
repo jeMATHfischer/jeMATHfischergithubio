@@ -9,3 +9,5 @@ github_username: jeMATHfischer
 markdown: kramdown
 theme: minima
 
+#navbar
+avatar: "images/portrait.jpg"
