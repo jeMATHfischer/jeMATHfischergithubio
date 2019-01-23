@@ -7,8 +7,7 @@ author: Jens
 
 Thomas Schelling proposed in 1971 a model to discribe the ethnical segregation in the larger cities of the US. 
 <div style="text-align:center">
-<img src="https://external-preview.redd.it/DIGac5dp9WUrJ-B5BK21hsyzYHs_SsGQv-YfQPJGgPc.jp$
-" height="50%" width="5$
+<img src="https://external-preview.redd.it/DIGac5dp9WUrJ-B5BK21hsyzYHs_SsGQv-YfQPJGgPc.jpg?width=640&crop=smart&auto=webp&s=4635575ce6afb5ac450a575c09d62e685d9e74cf" height="50%" width="50% />
 </div>
 His agent based model showed that segregation also happens if the agents do not mind living next to agents of different kind. 
 The basic concept was to put the agents on the nodes of a grid and allow in every time step a transition according to their current preference. 
