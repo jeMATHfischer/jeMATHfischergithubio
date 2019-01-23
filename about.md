@@ -9,8 +9,11 @@ title: About me
 Interaction between agents, agents' random behaviour within their social environment and general stochastic population systems make up a huge part of my interest. 
 That's why I decided to put up this webpage to collect interesting facts about networks and share my ideas and work on these topics. 
 
-{: .center_image}
-![image](/images/random_graph_example.png){: height="50%" width="50%"}
+#{: .center_image}
+<div class="center_image">
+![Me]({{site.baseurl}}/images/random_graph_example.png){: height="36px" width="36px"}
+</div>
+#![image](/images/random_graph_example.png){: height="50%" width="50%"}
 
 In my blog you find some impressions of my current work most of which being work in progress.
 
