@@ -12,7 +12,7 @@ That's why I decided to put up this webpage to collect interesting facts about n
 {: .center_image}
 ![image](/images/random_graph_example.png){: height="50%" width="50%"}
 
-<img src="{{ site.url }}/images/random_graph_example.png" class="center_image" hspace="25" width="170">
+<img src="{{ site.url }}/images/random_graph_example.png" class="img_container" hspace="25" width="170">
 
 In my blog you find some impressions of my current work most of which being work in progress.
 
