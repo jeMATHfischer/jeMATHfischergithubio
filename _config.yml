@@ -7,7 +7,7 @@ github_username: jeMATHfischer
 
 # Build settings
 markdown: kramdown
-theme:  #minima
+theme:  minima
 
 #navbar
 avatar: "images/portrait.jpg"
