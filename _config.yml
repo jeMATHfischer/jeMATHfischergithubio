@@ -9,6 +9,9 @@ github_username: jeMATHfischer
 markdown: kramdown
 theme:  minima
 
+kramdown:
+  parse_block_html: true
+
 #navbar
 avatar: "images/portrait.jpg"
 cv: 
