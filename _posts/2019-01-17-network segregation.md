@@ -3,7 +3,6 @@ layout: page
 author: Jens
 title: Randomized Network Segregation
 ---
-<h1>{{ page.title }}</h1>
 
 # Schelling's Segregation model
 
