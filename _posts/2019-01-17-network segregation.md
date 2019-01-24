@@ -5,6 +5,9 @@ title: Randomized Network Segregation
 description: This is the first of a series on Network Segregation as a result of agent based models.
 ---
 
+This is first text.
+
+
 # Schelling's Segregation model
 
 Thomas Schelling proposed in 1971 a model to discribe the ethnical segregation in the larger cities of the US. 
