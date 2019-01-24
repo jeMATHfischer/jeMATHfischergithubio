@@ -1,7 +1,7 @@
 ---
 layout: page
 author: Jens
-page.title: Randomized Network Segregation
+post.title: Randomized Network Segregation
 ---
 
 # Schelling's Segregation model
