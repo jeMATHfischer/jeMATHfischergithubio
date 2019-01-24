@@ -1,8 +1,9 @@
 ---
 layout: page
 author: Jens
-post.title: Randomized Network Segregation
+title: Randomized Network Segregation
 ---
+<h1>{{ page.title }}</h1>
 
 # Schelling's Segregation model
 
