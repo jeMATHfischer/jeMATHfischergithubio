@@ -1,11 +1,16 @@
 ---
 layout: page
 author: Jens
+Title: Randomized Network Segregation
 ---
 
 # Schelling's Segregation model
 
 Thomas Schelling proposed in 1971 a model to discribe the ethnical segregation in the larger cities of the US. 
+<div style="text-align:center">
+<img src="{{ site.url }}/images/chicago_seg.jpg" height="50%" width="5$
+</div>
+
 <div style="text-align:center">
 <img src="../images/chicago_seg.jpg" height="50%" width="50% />
 </div>
