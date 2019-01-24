@@ -2,6 +2,7 @@
 layout: page
 author: Jens
 title: Randomized Network Segregation
+description: This is the first of a series on Network Segregation as a result of agent based models.
 ---
 
 # Schelling's Segregation model
