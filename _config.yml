@@ -1,7 +1,7 @@
 # basic options
 title: Jens Fischer
 author: jeMATHfischer
-email: 
+email: jefischer@posteo.de
 description: A collection of work and ideas on dynamic networks and stochastic population systems
 github_username: jeMATHfischer
 
@@ -9,9 +9,12 @@ github_username: jeMATHfischer
 markdown: kramdown
 theme:  minima
 
+minima:
+	date_format: "%b %-d, %Y"
+
 kramdown:
   parse_block_html: true
 
 #navbar
 avatar: "{{ site.url }}/images/portrait.jpg"
-cv: "{{ site.url }}/assets/Jens_Fischer_CV.pdf"
+cv: "https://github.com/jeMATHfischer/jeMATHfischer.github.io/blob/master/assets/Jens_Fischer_CV.pdf"
