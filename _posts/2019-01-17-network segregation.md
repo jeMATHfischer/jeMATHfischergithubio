@@ -5,7 +5,8 @@ title: Randomized Network Segregation
 description: This is the first of a series on Network Segregation as a result of agent based models.
 ---
 
-This is first text.
+Racial and religious segregation is an issue known from many parts of the world. Even if there are no laws in state enforcing segregation it might still happen due to the history and social structure of the area.   
+While historically segregation is a behaviour that shows its effects explicitly within the communities modern segregation through social media might not be visible in one neighborhood. This situation demands new models for non-geographically constraint segregation. I am going to discuss some of my ideas within this series.
 
 
 # Schelling's Segregation model
