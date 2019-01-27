@@ -1,8 +1,9 @@
 ---
 layout: page
 author: Jens
-title: Randomized Network Segregation
+title: Randomized Network Segregation I
 description: This is the first of a series on Network Segregation as a result of agent based models.
+date: 2019-01-17T10:20:00Z
 ---
 
 Racial and religious segregation is an issue known from many parts of the world. Even if there are no laws in state enforcing segregation it might still happen due to the history and social structure of the area.   
