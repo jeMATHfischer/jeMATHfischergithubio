@@ -13,5 +13,5 @@ kramdown:
   parse_block_html: true
 
 #navbar
-avatar: "images/portrait.jpg"
-cv: "assets/Jens_Fischer_CV.pdf"
+avatar: "{{ site.url }}/images/portrait.jpg"
+cv: "{{ site.url }}/assets/Jens_Fischer_CV.pdf"
