@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Randomized Network Segregation II | Jens Fischer</title>
+<title>A Baseline Model | Jens Fischer</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Randomized Network Segregation II" />
+<meta property="og:title" content="A Baseline Model" />
 <meta name="author" content="Jens" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the first of a series on Network Segregation as a result of agent based models." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-19T11:20:00+01:00" />
 <script type="application/ld+json">
-{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/19/network-segregation.html","headline":"Randomized Network Segregation II","dateModified":"2019-01-19T11:20:00+01:00","datePublished":"2019-01-19T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/19/network-segregation.html"},"@context":"http://schema.org"}</script>
+{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/19/network-segregation.html","headline":"A Baseline Model","dateModified":"2019-01-19T11:20:00+01:00","datePublished":"2019-01-19T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/19/network-segregation.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jens Fischer" /></head>
 <body><header class="site-header" role="banner">
@@ -31,7 +31,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about.html">About me</a><a class="page-link" href="/">Blog</a></div>
+        <div class="trigger"><a class="page-link" href="/CV.html">CV</a><a class="page-link" href="/about.html">About me</a><a class="page-link" href="/">Blog</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -39,7 +39,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Randomized Network Segregation II</h1>
+    <h1 class="post-title">A Baseline Model</h1>
   </header>
 
   <div class="post-content">
@@ -64,16 +64,32 @@ First, we could think of an agreement process where both individuals find common
   <p><img src="http://localhost:4000/images/contagion.gif" height="50%" width="50%" /></p>
 </div>
 
-<p>We focus, therefore, on the second case where the conflicts are resolved by breaking up the relationships to the individuals of different opinion. This will necessarily lead to segregation. But what happens if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.</p>
+<p>Since the last model could not capture segregation we focus on a different approach. In this cas the conflicts are resolved by breaking up the relationships between the individuals of different opinion. This will necessarily lead to segregation. But what happens if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.</p>
 
 <h1 id="segregation-in-the-baseline-model">Segregation in the baseline model</h1>
 
-<p>I propose as a baseline model the following dynamical behaviour of our population given by a graph. This graph consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
+<p>My proposed baseline model shows the following dynamical behaviour of our population given by a graph. This graph consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
 The process runs in discrete time, so starting from <script type="math/tex">t=0</script> to <script type="math/tex">t=1</script> to <script type="math/tex">t=2</script> and so on. In each step we erase a <span style="color:red">red</span> edge and connect one of its end points randomly to another vertex. The process stops as soon as there are <span style="font-weight:bold">no</span> more <span style="color:red">red</span> edges.</p>
 <div style="text-align:center">
   <p><img src="http://localhost:4000/images/baseline_flip.gif" height="50%" width="50%" /></p>
 </div>
 
+<p>In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards we are going to look at the convergence behaviour to then advance the model to more opinions and therefore colors. Thus, with each subsequent post the complexity is going to increase.</p>
+
+<p>See you on my next post!</p>
+
+<html>
+<div style="display:inline text-align:left">
+  
+    <a href="/2019/01/17/network-segregation.html">&laquo; Randomized Network Segregation</a>
+  
+</div>
+<div style="text-align:right">
+  
+    <a class="next" href="/2019/01/22/network-segregation.html">Local Dynamics and Global Impact &raquo;</a>
+  
+</div>
+</html>
 
   </div>
 

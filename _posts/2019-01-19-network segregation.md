@@ -1,7 +1,7 @@
 ---
 layout: page
 author: Jens
-title: Randomized Network Segregation II
+title: A Baseline Model
 description: This is the first of a series on Network Segregation as a result of agent based models.
 date: 2019-01-19T10:20:00Z
 ---
@@ -29,13 +29,29 @@ First, we could think of an agreement process where both individuals find common
 <img src="{{ site.url }}/images/contagion.gif" height="50%" width="50%" />
 </div>
 
-We focus, therefore, on the second case where the conflicts are resolved by breaking up the relationships to the individuals of different opinion. This will necessarily lead to segregation. But what happens if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.
+Since the last model could not capture segregation we focus on a different approach. In this cas the conflicts are resolved by breaking up the relationships between the individuals of different opinion. This will necessarily lead to segregation. But what happens if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.
 
 # Segregation in the baseline model
 
-I propose as a baseline model the following dynamical behaviour of our population given by a graph. This graph consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
+My proposed baseline model shows the following dynamical behaviour of our population given by a graph. This graph consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
 The process runs in discrete time, so starting from $$t=0$$ to $$t=1$$ to $$t=2$$ and so on. In each step we erase a <span style="color:red">red</span> edge and connect one of its end points randomly to another vertex. The process stops as soon as there are <span style="font-weight:bold">no</span> more <span style="color:red">red</span> edges. 
 <div style="text-align:center">
 <img src="{{ site.url }}/images/baseline_flip.gif" height="50%" width="50%" />
 </div>
 
+In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards we are going to look at the convergence behaviour to then advance the model to more opinions and therefore colors. Thus, with each subsequent post the complexity is going to increase.
+
+See you on my next post! 
+
+<html>
+<div style ="display:inline text-align:left">
+  {% if page.previous.url %}
+    <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% endif %}
+</div>
+<div style ="text-align:right">
+  {% if page.next.url %}
+    <a class ="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>
+</html>
