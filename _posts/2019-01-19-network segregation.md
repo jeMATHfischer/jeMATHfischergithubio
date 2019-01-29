@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: posts
 author: Jens
 title: A Baseline Model
 description: This is the first of a series on Network Segregation as a result of agent based models.
@@ -42,16 +42,3 @@ The process runs in discrete time, so starting from $$t=0$$ to $$t=1$$ to $$t=2$
 In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards we are going to look at the convergence behaviour to then advance the model to more opinions and therefore colors. Thus, with each subsequent post the complexity is going to increase.
 
 See you on my next post! 
-
-<html>
-<div style ="display:inline text-align:left">
-  {% if page.previous.url %}
-    <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-</div>
-<div style ="text-align:right">
-  {% if page.next.url %}
-    <a class ="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
-</div>
-</html>

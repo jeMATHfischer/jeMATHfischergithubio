@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: posts
 author: Jens
 title: Randomized Network Segregation
 description: This is the first of a series on Network Segregation as a result of agent based models.
@@ -28,13 +28,4 @@ The main dynamics of Schelling's model is given by the agent's movement along th
 When considering networks that connect agents which are not subject to this constraint, e.g., social networks on the internet, Schelling's model is no longer applicable. Nonetheless, we observe segregation in these networks where connections are given up due to diverging values or political views.
 During this series I want to present a basic model for segregation in networks on which I am currently working on and hope to give live updates on the results. 
 During the first few posts I am going to present my simplest model and introduce some extensions always paired with some simulations.  
-
-<html>
-  {% if page.previous.url %}
-    <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class ="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
-</html>
 
