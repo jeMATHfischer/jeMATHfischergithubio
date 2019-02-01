@@ -1,7 +1,7 @@
 ---
 layout: posts
 author: Jens
-title: Local Dynamics and Global Impact
+title: [RNS] Local Dynamics and Global Impact
 description: This is the first of a series on Network Segregation as a result of agent based models.
 date: 2019-01-22T10:20:00Z
 ---

@@ -1,7 +1,7 @@
 ---
 layout: posts
 author: Jens
-title: Randomized Network Segregation
+title: [RNS] Randomized Network Segregation
 description: This is the first of a series on Network Segregation as a result of agent based models.
 date: 2019-01-17T10:20:00Z
 ---
