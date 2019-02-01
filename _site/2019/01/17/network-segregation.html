@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Randomized Network Segregation | Jens Fischer</title>
+<title>&#91;RNS&#93; Randomized Network Segregation | Jens Fischer</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Randomized Network Segregation" />
+<meta property="og:title" content="&#91;RNS&#93; Randomized Network Segregation" />
 <meta name="author" content="Jens" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the first of a series on Network Segregation as a result of agent based models." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-17T11:20:00+01:00" />
 <script type="application/ld+json">
-{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/17/network-segregation.html","headline":"Randomized Network Segregation","dateModified":"2019-01-17T11:20:00+01:00","datePublished":"2019-01-17T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/17/network-segregation.html"},"@context":"http://schema.org"}</script>
+{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/17/network-segregation.html","headline":"&#91;RNS&#93; Randomized Network Segregation","dateModified":"2019-01-17T11:20:00+01:00","datePublished":"2019-01-17T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/17/network-segregation.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jens Fischer" /></head>
 <body><header class="site-header" role="banner">
@@ -39,51 +39,51 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Randomized Network Segregation</h1>
+    <h1 class="post-title">&lt;html&gt;&amp;#91;RNS&amp;#93;&lt;/html&gt; Randomized Network Segregation</h1>
   </header>
 
   <div class="post-content">
     <html>
   <head>
     <meta charset="utf-8">
-    <title>Randomized Network Segregation</title>
+    <title><html>&#91;RNS&#93;</html> Randomized Network Segregation</title>
     <link rel="stylesheet" href="/assets/css/posts_styles.css">
   </head>
   <body>
 	 <div class="PageNavigation">
         
         
-         <a class="next" href="/2019/01/19/network-segregation.html">A Baseline Model &raquo;</a>
+         <a class="next" href="/2019/01/19/network-segregation.html"><html>&#91;RNS&#93;</html> A Baseline Model &raquo;</a>
         
         </div>
 
-    	<p>Racial and religious segregation is an issue known from many parts of the world. Even if there are no laws in state enforcing segregation it might still happen due to the history and social structure of the area. <br />
-While historically segregation is a behaviour that shows its effects explicitly within the communities modern segregation through social media might not be visible in one neighborhood. This situation demands new models for non-geographically constraint segregation. I am going to discuss some of my ideas within this series.</p>
+    	<p>Racial and religious segregation is an issue known from many parts of the world. Even if there are no laws in state enforcing segregation, it might still happen, due to the history and social structure of the area. <br />
+While historically segregation is a behaviour that shows its effects explicitly within the communities, modern segregation through social media might not be visible in one neighborhood. This situation demands new models for non-geographically constraint segregation. I am going to discuss some of my ideas within this series.</p>
 
 <h1 id="schellings-segregation-model">Schelling’s Segregation model</h1>
 
-<p>Thomas Schelling proposed in 1971 a model to discribe the ethnical segregation in the larger cities of the US.</p>
+<p>Thomas Schelling proposed in 1971 <a href="https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf"> a model</a> to discribe the ethnical segregation in the larger cities of the US.</p>
 <div style="text-align:center">
   <p><img src="http://localhost:4000/images/chicago_seg.jpg" height="50%" width="50%" /></p>
 </div>
-<p>His agent based model showed that segregation also happens if the agents do not mind living next to agents of different kind. 
-The basic concept was to put the agents on the nodes of a grid and allow in every time step a transition according to their current preference. 
+<p>His agent based model showed that segregation also happens, if the agents do not mind living next to agents of different kind. 
+The basic concept was to put the agents on the nodes of a grid and allow in every time step a transition from one node to another, according to their current preference. 
 One agent A’s current preference was thereby defined as the proportion of agents of similar or dissimilar kind surrounding A. 
-If the proportion dropped below a fixed threshhold then A starts to move on the grid trying to improve the proportion.
+If the proportion dropped below a fixed threshhold, then A starts to move on the grid trying to improve the proportion.
 A gameified simulation can be found <a href="https://ncase.me/polygons/"> here </a>.</p>
 
 <h1 id="segregation-of-networks">Segregation of Networks</h1>
 
-<p>The main dynamics of Schelling’s model is given by the agent’s movement along the grid on which they are placed. Their movement is therefore inherently constrained by the structure of their environement.
-When considering networks that connect agents which are not subject to this constraint, e.g., social networks on the internet, Schelling’s model is no longer applicable. Nonetheless, we observe segregation in these networks where connections are given up due to diverging values or political views.
-During this series I want to present a basic model for segregation in networks on which I am currently working on and hope to give live updates on the results. 
-During the first few posts I am going to present my simplest model and introduce some extensions always paired with some simulations.</p>
+<p>The main dynamics of Schelling’s model is given by the agent’s movement along the grid, on which they are placed. Their movement is, therefore, inherently constrained by the structure of their environement.
+When considering networks that connect agents, which are not subject to this constraint, e.g., social networks on the internet, Schelling’s model is no longer applicable. Nonetheless, we observe segregation in these networks, where connections are given up due to diverging values or political views.
+During this series, I want to present a basic model for segregation in networks, on which I am currently working, and hope to give live updates on the results. 
+The first few posts are going to cover my simplest model and introduce some extensions, always paired with some simulations.</p>
 
 
    	 <div class="PageNavigation">
     	
   	
-   	 <a class="next" href="/2019/01/19/network-segregation.html">A Baseline Model &raquo;</a>
+   	 <a class="next" href="/2019/01/19/network-segregation.html"><html>&#91;RNS&#93;</html> A Baseline Model &raquo;</a>
   	
    	</div>
 

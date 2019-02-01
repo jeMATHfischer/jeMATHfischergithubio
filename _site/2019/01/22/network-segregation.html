@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Local Dynamics and Global Impact | Jens Fischer</title>
+<title>&#91;RNS&#93; Local Dynamics and Global Impact | Jens Fischer</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Local Dynamics and Global Impact" />
+<meta property="og:title" content="&#91;RNS&#93; Local Dynamics and Global Impact" />
 <meta name="author" content="Jens" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the first of a series on Network Segregation as a result of agent based models." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-22T11:20:00+01:00" />
 <script type="application/ld+json">
-{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/22/network-segregation.html","headline":"Local Dynamics and Global Impact","dateModified":"2019-01-22T11:20:00+01:00","datePublished":"2019-01-22T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/22/network-segregation.html"},"@context":"http://schema.org"}</script>
+{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/22/network-segregation.html","headline":"&#91;RNS&#93; Local Dynamics and Global Impact","dateModified":"2019-01-22T11:20:00+01:00","datePublished":"2019-01-22T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/22/network-segregation.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jens Fischer" /></head>
 <body><header class="site-header" role="banner">
@@ -39,39 +39,39 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Local Dynamics and Global Impact</h1>
+    <h1 class="post-title">&lt;html&gt;&amp;#91;RNS&amp;#93;&lt;/html&gt; Local Dynamics and Global Impact</h1>
   </header>
 
   <div class="post-content">
     <html>
   <head>
     <meta charset="utf-8">
-    <title>Local Dynamics and Global Impact</title>
+    <title><html>&#91;RNS&#93;</html> Local Dynamics and Global Impact</title>
     <link rel="stylesheet" href="/assets/css/posts_styles.css">
   </head>
   <body>
 	 <div class="PageNavigation">
         
-         <a class="prev" href="/2019/01/19/network-segregation.html">&laquo; A Baseline Model </a>
+         <a class="prev" href="/2019/01/19/network-segregation.html">&laquo; <html>&#91;RNS&#93;</html> A Baseline Model </a>
         
         
         </div>
 
-    	<p>Having set the tone in my previous two posts I am happy to now introduce the dynamics enforcing segregation of a graph over time. I am going to describe the local behaviour of each node which can be seen as a single agent and its impacts on the whole structure which takes the form of a graph. You are going to see that just some simple local preference of each agent leads to segregation in the network.</p>
+    	<p>Having set the tone in my previous two posts, I am happy to now introduce the dynamics enforcing segregation of the graph over time. I am going to describe the local behaviour of each node, which can be seen as a single agent, and its impacts on the whole structure, which takes the form of a graph. You are going to see that just some simple local preference of each agent leads to segregation in the network.</p>
 
 <script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 <h1 id="outline-for-a-baseline-model-with-static-world-views">Outline for a baseline model with static world views</h1>
 
-<p>Recall that the basic setting was a graph consisting of a vertex set <script type="math/tex">V</script> and an set of edges <script type="math/tex">E</script>. The vertex set is colored with two colors, such that we have two sets <script type="math/tex">V_1</script> and <script type="math/tex">V_{-1}</script> such that <script type="math/tex">V=V_1\cup V_{-1}</script>.
-I am going to sometimes refer to the interpretation that the vertecies of color <script type="math/tex">1</script> and <script type="math/tex">-1</script> have opinion <script type="math/tex">1</script> and <script type="math/tex">-1</script>, respectively. This gives me the possibility to talk about actions that each agent performs and might bring the process to a less abstract level. We look at the segregation process in a discrete time scale as mentioned in <a href="/2019/01/19/network-segregation.html">my previous post </a>. This is due to the fact that the difficulties that come with the rate at which agents change their relationships are not of interest at this point.</p>
+<p>Recall that the basic setting was a graph consisting of a vertex set <script type="math/tex">V</script> and an set of edges <script type="math/tex">E</script>. The vertex set is colored with two colors, such that we have two sets <script type="math/tex">V_1</script> and <script type="math/tex">V_{-1}</script> with <script type="math/tex">V=V_1\cup V_{-1}</script>.
+I am going to use the interpretation that the agents, represented by vertecies of color <script type="math/tex">1</script> and <script type="math/tex">-1</script>, have opinion <script type="math/tex">1</script> or <script type="math/tex">-1</script>. This gives me the possibility to talk about actions that each agent performs based on his opinion. I hope that this way I can bring the process to a less abstract level. We look at the segregation process in a discrete time scale as mentioned in <a href="/2019/01/19/network-segregation.html">my previous post </a>. This is a simplification that can be defended because we are interested in the phenomenon itself and not the real time speed. Essentially, dealing wiht the difficulties that come with the rate, at which agents change their relationships, does not give new insights at this point.</p>
 
-<p>Looking at two agents <script type="math/tex">i</script> and <script type="math/tex">j</script> one can see the edges in <script type="math/tex">E</script> as the relationships between them. A relationship between agents of different opinion is shown in the next picture.</p>
+<p>Looking at two agents <script type="math/tex">i</script> and <script type="math/tex">j</script> one can see the edges in <script type="math/tex">E</script> as the relationship between them. A relationship between agents of different opinion is shown in the next picture.</p>
 <div class="img_container">
   <p><img src="http://localhost:4000/images/Interacting_agents.png" height="50%" width="50%" /></p>
 </div>
-<p>The image shows a <span style="color:red">red</span> edge between the two vertices having different colors, namely, <span style="color:green">green</span> and <span style="color:blue">blue</span>. All the other edges lead to vertices which are not shown inside the frame. We therefore concentrate on this edge. Since there is conflict between the <span style="color:green">green</span> and <span style="color:blue">blue</span> agent the red edge linking them is prone to being erased. Their relationship might be broken up.
+<p>The image shows a <span style="color:red">red</span> edge between the two vertices having different colors, namely, <span style="color:green">green</span> and <span style="color:blue">blue</span>. All the other edges lead to vertices which are not shown inside the frame. We, therefore, concentrate on this edge. Since there is conflict between the <span style="color:green">green</span> and <span style="color:blue">blue</span> agent, the <span style="color:red">red</span> edge linking them is may be erased. Their relationship might be broken up.
 In every time step we draw randomly an edge from all edges in the graph. If it is a <span style="color:red">red</span> edge we keep it otherwise we advance one timestep and draw a new one. You can imagine it like drawing some colored ball from an urn of balls. Drawing an edge can be seen as an outbreak of an open conflict. The edge is then erased with some probability <script type="math/tex">% <![CDATA[
 0<p<1 %]]></script>. The interpretation is that with probability <script type="math/tex">p</script> the relationship is broken up while with probability <script type="math/tex">1-p</script> the  <span style="color:green">green</span> and <span style="color:blue">blue</span> agent decide to agree to disagree and keep their relationship intact. Subsequently one of the two agents seeks out a new relationsship with any agent she does not have a relationsship with, yet. This again happens by randomly choosing either the <span style="color:green">green</span> agent or the <span style="color:blue">blue</span> agent. The random factor is implemented to avoid micro-dynamics concerning the responsibilities in the break up and the agents’ subsequent psychological needs.  <br />
 This way after one time step we have broken up one relationsship and created a new one. Keep in mind, that we can only erase <span style="color:red">red</span> edges but may create a <span style="color:green">green</span> or <span style="color:blue">blue</span> edge. If that happens there are less <span style="color:red">red</span> edges in the next timestep. The number of <span style="color:red">red</span> edges thus is monotonically decreasing under these dynamics. The process is depicted for some time steps in the following image.</p>
@@ -94,7 +94,7 @@ This way after one time step we have broken up one relationsship and created a n
 
    	 <div class="PageNavigation">
     	
-     	 <a class="prev" href="/2019/01/19/network-segregation.html">&laquo; A Baseline Model </a>
+     	 <a class="prev" href="/2019/01/19/network-segregation.html">&laquo; <html>&#91;RNS&#93;</html> A Baseline Model </a>
    	
   	
    	</div>

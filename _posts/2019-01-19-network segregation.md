@@ -1,7 +1,7 @@
 ---
 layout: posts
 author: Jens
-title: [RNS] A Baseline Model
+title: <html>&#91;RNS&#93;</html> A Baseline Model
 description: This is the first of a series on Network Segregation as a result of agent based models.
 date: 2019-01-19T10:20:00Z
 ---

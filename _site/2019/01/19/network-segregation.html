@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>A Baseline Model | Jens Fischer</title>
+<title>&#91;RNS&#93; A Baseline Model | Jens Fischer</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="A Baseline Model" />
+<meta property="og:title" content="&#91;RNS&#93; A Baseline Model" />
 <meta name="author" content="Jens" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the first of a series on Network Segregation as a result of agent based models." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-19T11:20:00+01:00" />
 <script type="application/ld+json">
-{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/19/network-segregation.html","headline":"A Baseline Model","dateModified":"2019-01-19T11:20:00+01:00","datePublished":"2019-01-19T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/19/network-segregation.html"},"@context":"http://schema.org"}</script>
+{"description":"This is the first of a series on Network Segregation as a result of agent based models.","author":{"@type":"Person","name":"Jens"},"@type":"BlogPosting","url":"http://localhost:4000/2019/01/19/network-segregation.html","headline":"&#91;RNS&#93; A Baseline Model","dateModified":"2019-01-19T11:20:00+01:00","datePublished":"2019-01-19T11:20:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/01/19/network-segregation.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jens Fischer" /></head>
 <body><header class="site-header" role="banner">
@@ -39,67 +39,67 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">A Baseline Model</h1>
+    <h1 class="post-title">&lt;html&gt;&amp;#91;RNS&amp;#93;&lt;/html&gt; A Baseline Model</h1>
   </header>
 
   <div class="post-content">
     <html>
   <head>
     <meta charset="utf-8">
-    <title>A Baseline Model</title>
+    <title><html>&#91;RNS&#93;</html> A Baseline Model</title>
     <link rel="stylesheet" href="/assets/css/posts_styles.css">
   </head>
   <body>
 	 <div class="PageNavigation">
         
-         <a class="prev" href="/2019/01/17/network-segregation.html">&laquo; Randomized Network Segregation </a>
+         <a class="prev" href="/2019/01/17/network-segregation.html">&laquo; <html>&#91;RNS&#93;</html> Randomized Network Segregation </a>
         
         
-         <a class="next" href="/2019/01/22/network-segregation.html">Local Dynamics and Global Impact &raquo;</a>
+         <a class="next" href="/2019/01/22/network-segregation.html"><html>&#91;RNS&#93;</html> Local Dynamics and Global Impact &raquo;</a>
         
         </div>
 
-    	<p>In this post I introduce a baseline model for segregation on graphs. In contrast to Schelling’s model which put the agent on the nodes of the grid in the center of attention we will focus on the behaviour of the edges. The edges play the role of a social connection that may be cut if the two end nodes diverge too drastically in their world views.</p>
+    	<p>In this post, I introduce a baseline model for segregation of graphs. In contrast to Schelling’s model, which put the agent on the nodes of a grid in the center of attention, I am going to focus on the behaviour of the edges. The edges play the role of a social connection, say relationship, that may be broken up, if the two end nodes diverge too drastically in their world views.</p>
 
 <script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 <h1 id="outline-for-a-baseline-model-with-static-world-views">Outline for a baseline model with static world views</h1>
 
-<p>The first and most simple step is to look at a graph consisting of a vertex set <script type="math/tex">V</script> and an set of edges <script type="math/tex">E</script>. We then color the vertex set in two colors, i.e., we have two sets <script type="math/tex">V_1</script> and <script type="math/tex">V_{-1}</script> such that <script type="math/tex">V=V_1\cup V_{-1}</script>.
-We can interpret the vertecies of color <script type="math/tex">1</script> and <script type="math/tex">-1</script> as having opinion <script type="math/tex">1</script> and <script type="math/tex">-1</script>, respectively. This is a very simplified model since our population can be sperated into two distinct opinions but it can serve as a baseline model.
-The edges <script type="math/tex">E</script> then display the relations between two individuals given by some vertices.</p>
+<p>The first and most simple framework is to look at a graph consisting of a vertex set <script type="math/tex">V</script> and an set of edges <script type="math/tex">E</script>. One then colors the vertex set in two colors, i.e., we have two sets <script type="math/tex">V_1</script> and <script type="math/tex">V_{-1}</script> such that <script type="math/tex">V=V_1\cup V_{-1}</script>.
+We can interpret the vertices of color <script type="math/tex">1</script> and <script type="math/tex">-1</script> as having opinion <script type="math/tex">1</script> and <script type="math/tex">-1</script>, respectively. This is a very simplified model because our population exhibits two distinct opinions, exclusively, but this approach can serve as a baseline model.
+Each edge <script type="math/tex">e\in E</script> then displays the relationship between two individuals, given by the two end nodes of $e$.</p>
 <div style="text-align:center">
   <p><img src="http://localhost:4000/images/bimodal_population_init.png" height="50%" width="50%" /></p>
 </div>
-<p>The <span style="color:green">green</span> and <span style="color: blue">blue</span> edges between the <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices in the preceding picture depict relations between individuals of identical opinion <span style="color:green">green</span> or <span style="color:blue">blue</span>, respectively. They are not prone to conflict because both individuals are perfectly aligned.
-In contrast to them the <span style="color: red">red</span> edges are those that display a conflict. They connect individuals who have different opinions displayed by the vertices having different colors.<br />
+<p>The <span style="color:green">green</span> and <span style="color: blue">blue</span> edges between the <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices in the preceding picture depict relationships between individuals of identical opinion <span style="color:green">green</span> or <span style="color:blue">blue</span>, respectively. They are not prone to conflict because both individuals are perfectly aligned.
+In contrast, the <span style="color: red">red</span> edges are those that display potential conflict. They connect individuals, who have different opinions displayed by the vertices having different colors.<br />
 There are two possible ways to go forth in the modelling procedure.
-First, we could think of an agreement process where both individuals find common ground and the conflict is resolved. Within the framework of two possible opinions agreement is only possible if one of the individuals takes the opinion of the other, i.e., one of the vertices swaps the color. This process does not lead to segregation but to the spread of one opinion and fits rather in the setting of <a href="https://en.wikipedia.org/wiki/Genetic_drift">Wright-Fisher type models</a>. We are going to come back to this process later on in the series.</p>
+First, we can imagine agreement to occur such that both individuals find common ground and the conflict is resolved. Within the framework of two possible opinions, agreement is only possible, if one of the individuals takes the opinion of the other, i.e., one of the vertices swaps the color. This process does not lead to segregation, but to the spread of one opinion and fits rather in the setting of <a href="https://en.wikipedia.org/wiki/Genetic_drift">Wright-Fisher type models</a>. We are going to come back to this process later on in the series.</p>
 <div style="text-align:center">
   <p><img src="http://localhost:4000/images/contagion.gif" height="50%" width="50%" /></p>
 </div>
 
-<p>Since the last model could not capture segregation we focus on a different approach. In this cas the conflicts are resolved by breaking up the relationships between the individuals of different opinion. This will necessarily lead to segregation. But what happens if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.</p>
+<p>Since the last model could not capture segregation, we focus on a different approach. In this case, the conflicts are resolved by breaking up the relationships between the individuals of different opinion. This will necessarily lead to segregation. But what happens, if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.</p>
 
 <h1 id="segregation-in-the-baseline-model">Segregation in the baseline model</h1>
 
-<p>My proposed baseline model shows the following dynamical behaviour of our population given by a graph. This graph consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
-The process runs in discrete time, so starting from <script type="math/tex">t=0</script> to <script type="math/tex">t=1</script> to <script type="math/tex">t=2</script> and so on. In each step we erase a <span style="color:red">red</span> edge and connect one of its end points randomly to another vertex. The process stops as soon as there are <span style="font-weight:bold">no</span> more <span style="color:red">red</span> edges.</p>
+<p>My proposed baseline model shows the following dynamical behaviour of our population. The population, represented by a graph, consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
+The process runs in discrete time, so starting from <script type="math/tex">t=0</script> we go to <script type="math/tex">t=1</script> to <script type="math/tex">t=2</script> and so on. In each step, we erase a <span style="color:red">red</span> edge and connect one of its end points randomly to another vertex. The process stops as soon as there are <span style="font-weight:bold">no</span> more <span style="color:red">red</span> edges.</p>
 <div style="text-align:center">
   <p><img src="http://localhost:4000/images/baseline_flip.gif" height="50%" width="50%" /></p>
 </div>
 
-<p>In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards we are going to look at the convergence behaviour to then advance the model to more opinions and therefore colors. Thus, with each subsequent post the complexity is going to increase.</p>
+<p>In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards, we are going to look at the convergence behaviour, to then advance the model to more opinions and, therefore, colors in the graph. Thus, with each subsequent post the complexity is going to increase.</p>
 
 <p>See you on my next post!</p>
 
    	 <div class="PageNavigation">
     	
-     	 <a class="prev" href="/2019/01/17/network-segregation.html">&laquo; Randomized Network Segregation </a>
+     	 <a class="prev" href="/2019/01/17/network-segregation.html">&laquo; <html>&#91;RNS&#93;</html> Randomized Network Segregation </a>
    	
   	
-   	 <a class="next" href="/2019/01/22/network-segregation.html">Local Dynamics and Global Impact &raquo;</a>
+   	 <a class="next" href="/2019/01/22/network-segregation.html"><html>&#91;RNS&#93;</html> Local Dynamics and Global Impact &raquo;</a>
   	
    	</div>
 
