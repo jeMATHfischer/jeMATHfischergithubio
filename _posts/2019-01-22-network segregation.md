@@ -30,10 +30,10 @@ This way after one time step we have broken up one relationsship and created a n
 </div>
 In fact, under these dynamics all red edges will be erased after finite time. Consequently, in the end there are no more conflicts and all agents are solely linked to their own kind. 
 <div class="img_container">
-<img id="gif-1" src="{{site.url}}/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%"/>
+<img id="gif-1" src="{{ site.url }}/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%"/>
 <p>
     <a href="#gif-1" 
-      onclick="document.getElementById('gif-1').src='{{site.url}}/images/segregation_full.gif'">
+      onclick="document.getElementById('gif-1').src='{{ site.url }}/images/segregation_full.gif'">
      Show it again!</a>
 </p>
 </div>
