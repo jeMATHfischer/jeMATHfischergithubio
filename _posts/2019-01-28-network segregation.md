@@ -6,7 +6,7 @@ description: This is the first of a series on Network Segregation as a result of
 date: 2019-01-28T10:20:00Z
 ---
 
-In the previous post, I described the dynamics of our network in terms of agents and their individual opinions. Furthermore, I motivated the mathematical approach in terms of graphs and demonstrated via a simulation the segregation of the process. This post serves as a bridge to extend our discussion of segregation of networks further. To that end, I introduce the mathematical framework with all necessary notation. After having set this groundwork, we can easily extend the model, so bear with me.
+In the previous post, I described the dynamics of our network in terms of agents and their individual opinions. Furthermore, I motivated the mathematical approach in terms of graphs and demonstrated via a simulation the segregation of the network. This post serves as a bridge to extend our discussion of segregation of networks further. To that end, I introduce the mathematical framework with all necessary notation. After having set this groundwork, we can easily extend the model, so bear with me.
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
