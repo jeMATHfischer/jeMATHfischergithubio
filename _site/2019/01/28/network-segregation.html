@@ -48,18 +48,20 @@
          <a class="prev" href="/2019/01/22/network-segregation.html">&laquo; <html>&#91;RNS&#93;</html> Local Dynamics and Global Impact </a>
         
         
+         <a class="next" href="/2019/02/05/network-segregation.html"><html>&#91;RNS&#93;</html> Segregation in Diverse Populations &raquo;</a>
+        
         </div>
 
-    	<p>In the previous post, I described the dynamics of our network in terms of agents and their individual opinions. Furthermore, I motivated the mathematical approach in terms of graphs and demonstrated via a simulation the segregation of the process. This post serves as a bridge to extend our discussion of segregation of networks further. To that end, I introduce the mathematical framework with all necessary notation. After having set this groundwork, we can easily extend the model, so bear with me.</p>
+    	<p>In the previous post, I described the dynamics of our network in terms of agents and their individual opinions. Furthermore, I motivated the mathematical approach in terms of graphs and demonstrated via a simulation the segregation of the network. This post serves as a bridge to extend our discussion of segregation of networks further. To that end, I introduce the mathematical framework with all necessary notation. After having set this groundwork, we can easily extend the model, so bear with me.</p>
 
 <script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 <h1 id="a-mathematical-formulation-of-segregation">A Mathematical Formulation of Segregation</h1>
-<p>At the end of the previous post, we reached this depiction of the segregation behaviour.</p>
+<p>At the end of the previous post, we obtrained this visualization of the segregation behaviour.</p>
 <div class="img_container">
-  <p><img id="gif-1" src="http://localhost:4000/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%" /></p>
-  <p>
+<img id="gif-1" src="http://localhost:4000/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%" />
+<p>
     <a href="#gif-1" onclick="document.getElementById('gif-1').src='http://localhost:4000/images/segregation_full.gif'">
      Show it again!</a>
 </p>
@@ -73,7 +75,7 @@
 <p>We define the following transition between graphs in terms of the edges denoted by <script type="math/tex">E_t</script>.
 At each time step <script type="math/tex">t\geq 1</script>, assuming that <script type="math/tex">G_{t-1}</script> is a simple graph, we draw uniformly a random edge <script type="math/tex">(I,J)\in E_{t-1}</script>. We then draw without replacement edges from <script type="math/tex">E_t^c\cup\{(I,J)\}</script> until we draw one, which we call <script type="math/tex">e^{\ast}</script>, that has either <script type="math/tex">I</script> or <script type="math/tex">J</script> as endpoint. Note that this “or” is not exclusive. The endpoints of <script type="math/tex">e^{\ast}</script> have the names <script type="math/tex">e^{\ast}_1</script> and <script type="math/tex">e^{\ast}_2</script>. From this point on I assume for reasons of readability that <script type="math/tex">e^{\ast}</script> and <script type="math/tex">(I,J)</script> share the end node <script type="math/tex">I=e^{\ast}_2</script>.</p>
 
-<p>If <script type="math/tex">|c_I - c_J|\geq |c_I - c_{e^{\ast}_2}|</script>, we remove the edge <script type="math/tex">(I,J)</script> with probability <script type="math/tex">p>0</script> from <script type="math/tex">E_t</script> and add the edge <script type="math/tex">e^{\ast}</script> to <script type="math/tex">E_t</script>. Thus,
+<p>If <script type="math/tex">|c_I - c_J|\geq |c_I - c_{e^{\ast}_1}|</script>, we remove the edge <script type="math/tex">(I,J)</script> with probability <script type="math/tex">p>0</script> from <script type="math/tex">E_t</script> and add the edge <script type="math/tex">e^{\ast}</script> to <script type="math/tex">E_t</script>. Thus,
 <script type="math/tex">E_{t+1} = (E_t\cup\{e^{\ast}\})\backslash\{(I,J)\}</script></p>
 
 <h1 id="remarks-to-take-away">Remarks to take away</h1>
@@ -96,6 +98,8 @@ At each time step <script type="math/tex">t\geq 1</script>, assuming that <scrip
     	
      	 <a class="prev" href="/2019/01/22/network-segregation.html">&laquo; <html>&#91;RNS&#93;</html> Local Dynamics and Global Impact </a>
    	
+  	
+   	 <a class="next" href="/2019/02/05/network-segregation.html"><html>&#91;RNS&#93;</html> Segregation in Diverse Populations &raquo;</a>
   	
    	</div>
 

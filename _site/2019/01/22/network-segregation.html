@@ -64,19 +64,19 @@ I am going to use the interpretation that the agents, represented by vertecies o
 
 <p>Looking at two agents <script type="math/tex">i</script> and <script type="math/tex">j</script> one can see the edges in <script type="math/tex">E</script> as the relationship between them. A relationship between agents of different opinion is shown in the next picture.</p>
 <div class="img_container">
-  <p><img src="http://localhost:4000/images/Interacting_agents.png" height="50%" width="50%" /></p>
+<img src="http://localhost:4000/images/Interacting_agents.png" height="50%" width="50%" />
 </div>
 <p>The image shows a <span style="color:red">red</span> edge between the two vertices having different colors, namely, <span style="color:green">green</span> and <span style="color:blue">blue</span>. All the other edges lead to vertices which are not shown inside the frame. We, therefore, concentrate on this edge. Since there is conflict between the <span style="color:green">green</span> and <span style="color:blue">blue</span> agent, the <span style="color:red">red</span> edge linking them is may be erased. Their relationship might be broken up.
 In every time step we draw randomly an edge from all edges in the graph. If it is a <span style="color:red">red</span> edge we keep it otherwise we advance one timestep and draw a new one. You can imagine it like drawing some colored ball from an urn of balls. Drawing an edge can be seen as an outbreak of an open conflict. The edge is then erased with some probability <script type="math/tex">% <![CDATA[
 0<p<1 %]]></script>. The interpretation is that with probability <script type="math/tex">p</script> the relationship is broken up while with probability <script type="math/tex">1-p</script> the  <span style="color:green">green</span> and <span style="color:blue">blue</span> agent decide to agree to disagree and keep their relationship intact. Subsequently one of the two agents seeks out a new relationsship with any agent she does not have a relationsship with, yet. This again happens by randomly choosing either the <span style="color:green">green</span> agent or the <span style="color:blue">blue</span> agent. The random factor is implemented to avoid micro-dynamics concerning the responsibilities in the break up and the agents’ subsequent psychological needs.  <br />
 This way after one time step we have broken up one relationsship and created a new one. Keep in mind, that we can only erase <span style="color:red">red</span> edges but may create a <span style="color:green">green</span> or <span style="color:blue">blue</span> edge. If that happens there are less <span style="color:red">red</span> edges in the next timestep. The number of <span style="color:red">red</span> edges thus is monotonically decreasing under these dynamics. The process is depicted for some time steps in the following image.</p>
 <div class="img_container">
-  <p><img src="http://localhost:4000/images/baseline_some_steps.gif" height="50%" width="50%" /></p>
+<img src="http://localhost:4000/images/baseline_some_steps.gif" height="50%" width="50%" />
 </div>
 <p>In fact, under these dynamics all red edges will be erased after finite time. Consequently, in the end there are no more conflicts and all agents are solely linked to their own kind.</p>
 <div class="img_container">
-  <p><img id="gif-1" src="http://localhost:4000/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%" /></p>
-  <p>
+<img id="gif-1" src="http://localhost:4000/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%" />
+<p>
     <a href="#gif-1" onclick="document.getElementById('gif-1').src='http://localhost:4000/images/segregation_full.gif'">
      Show it again!</a>
 </p>

@@ -63,14 +63,14 @@
 We can interpret the vertices of color <script type="math/tex">1</script> and <script type="math/tex">-1</script> as having opinion <script type="math/tex">1</script> and <script type="math/tex">-1</script>, respectively. This is a very simplified model because our population exhibits two distinct opinions, exclusively, but this approach can serve as a baseline model.
 Each edge <script type="math/tex">e\in E</script> then displays the relationship between two individuals, given by the two end nodes of $e$.</p>
 <div class="img_container">
-  <p><img src="http://localhost:4000/images/bimodal_population_init.png" height="50%" width="50%" /></p>
+<img src="http://localhost:4000/images/bimodal_population_init.png" height="50%" width="50%" />
 </div>
 <p>The <span style="color:green">green</span> and <span style="color: blue">blue</span> edges between the <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices in the preceding picture depict relationships between individuals of identical opinion <span style="color:green">green</span> or <span style="color:blue">blue</span>, respectively. They are not prone to conflict because both individuals are perfectly aligned.
 In contrast, the <span style="color: red">red</span> edges are those that display potential conflict. They connect individuals, who have different opinions displayed by the vertices having different colors.<br />
 There are two possible ways to go forth in the modelling procedure.
 First, we can imagine agreement to occur such that both individuals find common ground and the conflict is resolved. Within the framework of two possible opinions, agreement is only possible, if one of the individuals takes the opinion of the other, i.e., one of the vertices swaps the color. This process does not lead to segregation, but to the spread of one opinion and fits rather in the setting of <a href="https://en.wikipedia.org/wiki/Genetic_drift">Wright-Fisher type models</a>. We are going to come back to this process later on in the series.</p>
 <div class="img_container">
-  <p><img src="http://localhost:4000/images/contagion.gif" height="50%" width="50%" /></p>
+<img src="http://localhost:4000/images/contagion.gif" height="50%" width="50%" />
 </div>
 
 <p>Since the last model could not capture segregation, we focus on a different approach. In this case, the conflicts are resolved by breaking up the relationships between the individuals of different opinion. This will necessarily lead to segregation. But what happens, if we allow forming of new relationships to compensate for the broken one? This is going to be our baseline model.</p>
@@ -80,7 +80,7 @@ First, we can imagine agreement to occur such that both individuals find common 
 <p>My proposed baseline model shows the following dynamical behaviour of our population. The population, represented by a graph, consists of <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices as well as <span style="color:green">green</span>, <span style="color:blue">blue</span> and <span style="color:red">red</span> edges. 
 The process runs in discrete time, so starting from <script type="math/tex">t=0</script> we go to <script type="math/tex">t=1</script> to <script type="math/tex">t=2</script> and so on. In each step, we erase a <span style="color:red">red</span> edge and connect one of its end points randomly to another vertex. The process stops as soon as there are <span style="font-weight:bold">no</span> more <span style="color:red">red</span> edges.</p>
 <div style="text-align:center">
-  <p><img src="http://localhost:4000/images/baseline_flip.gif" height="50%" width="50%" /></p>
+<img src="http://localhost:4000/images/baseline_flip.gif" height="50%" width="50%" />
 </div>
 
 <p>In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards, we are going to look at the convergence behaviour, to then advance the model to more opinions and, therefore, colors in the graph. Thus, with each subsequent post the complexity is going to increase.</p>

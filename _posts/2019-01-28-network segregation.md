@@ -14,7 +14,7 @@ In the previous post, I described the dynamics of our network in terms of agents
 
 
 # A Mathematical Formulation of Segregation
-At the end of the previous post, we reached this depiction of the segregation behaviour.
+At the end of the previous post, we obtrained this visualization of the segregation behaviour.
 <div class="img_container">
 <img id="gif-1" src="{{ site.url }}/images/segregation_full.gif" alt="Full Segregation" height="50%" width="50%"/>
 <p>
@@ -32,7 +32,7 @@ $$(G_t)_{t\in \mathbb{N}}=((V,E_t))_{t\in \mathbb{N}}$$ begins at time $$t=0$$ w
 We define the following transition between graphs in terms of the edges denoted by $$E_t$$.
 At each time step $$t\geq 1$$, assuming that $$G_{t-1}$$ is a simple graph, we draw uniformly a random edge $$(I,J)\in E_{t-1}$$. We then draw without replacement edges from $$E_t^c\cup\{(I,J)\}$$ until we draw one, which we call $$e^{\ast}$$, that has either $$I$$ or $$J$$ as endpoint. Note that this "or" is not exclusive. The endpoints of $$e^{\ast}$$ have the names $$e^{\ast}_1$$ and $$e^{\ast}_2$$. From this point on I assume for reasons of readability that $$e^{\ast}$$ and $$(I,J)$$ share the end node $$I=e^{\ast}_2$$.
 
-If $$|c_I - c_J|\geq |c_I - c_{e^{\ast}_2}|$$, we remove the edge $$(I,J)$$ with probability $$p>0$$ from $$E_t$$ and add the edge $$e^{\ast}$$ to $$E_t$$. Thus,
+If $$|c_I - c_J|\geq |c_I - c_{e^{\ast}_1}|$$, we remove the edge $$(I,J)$$ with probability $$p>0$$ from $$E_t$$ and add the edge $$e^{\ast}$$ to $$E_t$$. Thus,
 $$E_{t+1} = (E_t\cup\{e^{\ast}\})\backslash\{(I,J)\}$$
 
 # Remarks to take away
