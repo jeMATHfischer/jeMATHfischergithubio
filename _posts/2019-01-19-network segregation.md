@@ -22,7 +22,7 @@ Each edge $$e\in E$$ then displays the relationship between two individuals, giv
 <img src="{{ site.url }}/images/bimodal_population_init.png" height="50%" width="50%" />
 </div>
 The <span style="color:green">green</span> and <span style="color: blue">blue</span> edges between the <span style="color:green">green</span> and <span style="color:blue">blue</span> vertices in the preceding picture depict relationships between individuals of identical opinion <span style="color:green">green</span> or <span style="color:blue">blue</span>, respectively. They are not prone to conflict because both individuals are perfectly aligned.
-In contrast, the <span style="color: red">red</span> edges are those that display potential conflict. They connect individuals, who have different opinions displayed by the vertices having different colors.  
+In contrast, the <span style="color: red">red</span> edges display potential conflict. They connect individuals, who have different opinions displayed by the vertices having different colors.  
 There are two possible ways to go forth in the modelling procedure.
 First, we can imagine agreement to occur such that both individuals find common ground and the conflict is resolved. Within the framework of two possible opinions, agreement is only possible, if one of the individuals takes the opinion of the other, i.e., one of the vertices swaps the color. This process does not lead to segregation, but to the spread of one opinion and fits rather in the setting of <a href ="https://en.wikipedia.org/wiki/Genetic_drift">Wright-Fisher type models</a>. We are going to come back to this process later on in the series.
 <div class="img_container">
@@ -39,6 +39,6 @@ The process runs in discrete time, so starting from $$t=0$$ we go to $$t=1$$ to 
 <img src="{{ site.url }}/images/baseline_flip.gif" height="50%" width="50%" />
 </div>
 
-In the upcoming posts I am first going to discuss the concrete model and its mathematical properties. Afterwards, we are going to look at the convergence behaviour, to then advance the model to more opinions and, therefore, colors in the graph. Thus, with each subsequent post the complexity is going to increase.
+In the upcoming posts, I am first going to discuss the concrete model and its mathematical properties. Afterwards, we are going to look at the convergence behaviour, to then advance the model to more opinions and, therefore, colors in the graph. Thus, with each subsequent post the complexity is going to increase.
 
 See you on my next post! 
